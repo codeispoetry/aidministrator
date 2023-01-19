@@ -1,0 +1,15 @@
+{
+  "name": "wp-codespace",
+  "version": "1.0.0",
+  "description": "wp-codespace",
+  "main": "index.js",
+  "author": "Thomas Rose",
+  "devDependencies": {
+    "@wordpress/eslint-plugin": "^13.5.0",
+    "eslint": "^8.27.0"
+  },
+  "dependencies": {
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
+  }
+}
