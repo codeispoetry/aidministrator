@@ -19,14 +19,7 @@ wp core install --url=https://$(CODESPACE_NAME) --title=WordPress --admin_user=a
 
 # Selected plugins
 wp plugin delete akismet
-wp plugin install show-current-template --activate
 wp plugin activate wp-codespace
-
-# Demo content for WordPress
-wp plugin install wordpress-importer --activate
-curl https://raw.githubusercontent.com/WPTT/theme-unit-test/master/themeunittestdata.wordpress.xml > demo-content.xml
-wp import demo-content.xml --authors=create
-rm demo-content.xml
 
 #Xdebug
 echo xdebug.log_level=0 | sudo tee -a /usr/local/etc/php/conf.d/xdebug.ini
@@ -37,7 +30,7 @@ npm install
 composer install
 
 # Setup local plugin
-cd $REPO_FOLDER/wordpress/wp-content/plugins/wp-codespace && npm install && npx playwright install && npm run compile:css
+cd $REPO_FOLDER/wordpress/wp-content/plugins/aidministrator && npm install && npx playwright install && npm run compile:css
 code -r wp-codespace.php
 
 # Setup bash

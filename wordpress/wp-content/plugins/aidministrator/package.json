@@ -1,0 +1,22 @@
+{
+  "name": "aidministrator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "./node_modules/node-sass/bin/node-sass --watch build/sass -r -o dist/css",
+    "compile:css": "./node_modules/node-sass/bin/node-sass build/sass -r -o dist/css"
+  },
+  "author": "Thomas Rose",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.27.1",
+    "@wordpress/eslint-plugin": "^13.5.0",
+    "eslint": "^8.27.0",
+    "eslint-config-google": "^0.14.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "node-sass": "^8.0.0"
+  }
+}

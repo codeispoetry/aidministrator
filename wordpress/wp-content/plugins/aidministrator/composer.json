@@ -1,0 +1,23 @@
+{
+  "name": "codeispoetry/aidministrator",
+  "type": "wordpress-plugin",
+  "config": {
+    "process-timeout": 7200,
+    "sort-packages": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "autoload": {
+    "classmap": [
+      "inc/"
+    ],
+    "files": [
+      "load.php"
+    ]
+  },
+  "scripts": {
+    "phpcs": "phpcs -s .",
+    "phpcbf": "phpcbf ."
+  }
+}

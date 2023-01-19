@@ -13,4 +13,3 @@ wordpress/wp-content/*
 !wordpress/wp-content/plugins
 wordpress/wp-content/plugins/*
 !wordpress/wp-content/plugins/aidministrator
-

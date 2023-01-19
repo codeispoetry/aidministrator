@@ -1,0 +1,60 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: AIdministrator 1.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/aidministrator\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-01-10T11:02:27+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language: \n"
+"X-Generator: WP-CLI 2.7.1\n"
+
+#. Plugin Name of the plugin
+msgid "AIdministrator"
+msgstr ""
+
+#. Description of the plugin
+msgid "Provides a chatbot (chatgpt) to do administrative tasks."
+msgstr "Nutze künstliche Intelligenz, um WordPress zu administrieren"
+
+#. Author of the plugin
+msgid "Thomas Rose"
+msgstr ""
+
+
+#: inc/controllers/Plugin.php:46
+msgid "An error occurred."
+msgstr "Ein Fehler ist passiert"
+
+#: inc/views/page.php:16
+msgid "Ask the AI for help."
+msgstr "Nutze die KI für Hilfe"
+
+#: inc/views/page.php:27
+msgid "one moment please"
+msgstr "Augenblick bitte"
+
+#: inc/views/page.php:35
+msgid "Type your message here"
+msgstr "Bitte gib hier Deine Nachricht ein"
+
+#: inc/views/page.php:37
+msgid "Send"
+msgstr "Senden"
+
+#: inc/controllers/Action.php:40
+msgid "No command found. Can not do anything."
+msgstr "Es wurde kein passender Befehl gefunden."
+
+#. translators: %s is the command.
+#: inc/controllers/Action.php:46
+msgid "Nope! %s is not allowed."
+msgstr "Der Befehl %s ist nicht erlaubt."
+
+#: inc/controllers/Action.php:94
+msgid "Could not reach AI. It says: "
+msgstr "Konnte die KI nicht erreichen. Die Fehlermeldung lautet: "
+
