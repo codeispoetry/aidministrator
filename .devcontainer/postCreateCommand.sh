@@ -19,7 +19,7 @@ wp core install --url=https://$(CODESPACE_NAME) --title=WordPress --admin_user=a
 
 # Selected plugins
 wp plugin delete akismet
-wp plugin activate wp-codespace
+wp plugin activate aidministrator
 
 #Xdebug
 echo xdebug.log_level=0 | sudo tee -a /usr/local/etc/php/conf.d/xdebug.ini
@@ -30,8 +30,8 @@ npm install
 composer install
 
 # Setup local plugin
-cd $REPO_FOLDER/wordpress/wp-content/plugins/aidministrator && npm install && npx playwright install && npm run compile:css
-code -r wp-codespace.php
+cd $REPO_FOLDER/wordpress/wp-content/plugins/aidministrator && composer install && npm install && npm run compile:css
+code -r aidministrator.php
 
 # Setup bash
 echo export PATH=\"\$PATH:$REPO_FOLDER/vendor/bin:$REPO_FOLDER/node_modules/.bin/\" >> ~/.bashrc
